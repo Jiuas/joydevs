@@ -1,0 +1,50 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+006     pb
+007     pc
+008     PSP_DATA
+008     pd
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021     main.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY.P1
+10D-10E @READ_PROGRAM_MEMORY.P2
+
+0004  main
+0004  @cinit
+
+Project Files:
+    controlAvance.c
+    ..\..\..\..\..\..\Program Files\PICC\devices\16f877a.h
+
+Units:
+    C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.err
+    Ext Symbols: C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.esym
+    INHX8:       C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.hex
+    Symbols:     C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.sym
+    List:        C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.lst
+    Debug/COFF:  C:\Users\Jota\Desktop\joyDev\joydevs\Code\controlAvance.cof
+    Call Tree:   controlAvance.tre
+    Statistics:  controlAvance.sta

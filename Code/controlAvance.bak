@@ -1,0 +1,39 @@
+
+#include <16f877a.h>
+#fuses HS,NOWDT,NOBROWNOUT,NOCPD,NODEBUG
+#useDelay (clock=20M)
+#USE FAST_IO(D)
+#USE FAST_IO(C)
+
+#define ARRIBA pin_b0
+#define DERECHA pin_b1
+#define ABAJO pin_b2
+#define IZQUIERDA pin_b3
+#define BTN_pin_b4
+#define BTN_pin_b5
+//emision del pic al l293
+#define ADELANTE_d pin_d0
+#define ATRAS_d pin_d1
+#define ADELANTE_i pin_d2
+#define ATRAS_i pin_d3
+/////
+#define ADELANTE1_d pin_d5
+#define ATRAS1_d pin_d6
+#define ADELANTE1_i pin_d7
+#define ATRAS1_i pin_d8
+void main(){
+   set_tris_b(0b11111111);
+   set_tris_d(0b00000000);
+   if (ARRIBA){
+      output_high(ADELANTE_d);
+      output_high(ADELANTE_i);
+      output_high(ADELANTE1_d);
+      output_high(ADELANTE1_i):
+   }
+   if(ABAJO){
+      output_high(ATRAS_d);
+      output_high(ATRAS_i);
+      output_high(ATRAS1_d);
+      output_high(ATRAS1_i);
+   }
+}

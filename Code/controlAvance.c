@@ -33,17 +33,13 @@
 
 void main(){
    pd = 0;
-   pb = 1;
+   pb = 0;
    pc = 0;
    port_b_pullups(0);
    set_tris_b(0b11111111);
    set_tris_d(0b00000000);
    set_tris_c(0b00000000);
    while (TRUE) {
-      
-      
-      output_low(MOTORDER);
-      output_low(MOTORIZQ);
       if (input(ARRIBA)==1){
          output_high(ATRAS_1_UP);
          output_high(ATRAS_2_UP);
@@ -71,8 +67,14 @@ void main(){
       if(input(DERECHA) == 1){
          output_high(MOTORDER);
       }
+      else{
+         output_low(MOTORDER);
+      }
       if (input(IZQUIERDA) ==1){
          output_high(MOTORIZQ);
+      } else {
+         output_low(MOTORIZQ);
       }
+      
    }
 }

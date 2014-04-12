@@ -12,26 +12,26 @@ Stack used: 0 worst case (out of 8 total available)
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   79    39 100  controlAvance.c
+   81    41 100  controlAvance.c
   309     0   0  ..\..\..\..\..\..\Program Files\PICC\devices\16f877a.h
 ----- -----
-  388    39 Total
+  390    41 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
-0     68  94   1   940  3.9  main
+0     68  94   1   965  3.9  main
 
 Program metrics:
     Functions               1
-    Statements              39
+    Statements              41
     Comments                75
-    Volume (V)              940
+    Volume (V)              965
     Difficilty (D)          3.9
-    Effort to implement (E) 3651
+    Effort to implement (E) 3748
     Time to implement (T)   3 minutes
     Est Delivered Bugs (B)  0
     Cyclomatic Complexity   4
-    Maintainability (MI)    113
+    Maintainability (MI)    112
 
  Segment     Used  Free
 -----------  ----  ----
